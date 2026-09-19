@@ -22,7 +22,7 @@ dbConnect()
 app.use("/users"  ,userRoutes )
 app.use("/blogs" , blogRoutes)
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0',() => {
   console.log(`Server started at http://localhost:${PORT}`);
 });
 
